@@ -1,13 +1,14 @@
 ﻿namespace Foo.Console
 {
-    // The attribute will fail to resolve in compile-time
+    extern alias FooBar;
+    using BazAttribute = FooBar::Foo.Bar.BazAttribute;
 
-    [Foo.Bar.BazAttribute]
+    [BazAttribute]
     class Program
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine($"{typeof(Foo.Bar.BazAttribute).AssemblyQualifiedName}");
+            System.Console.WriteLine($"{typeof(BazAttribute).AssemblyQualifiedName}");
         }
     }
 }

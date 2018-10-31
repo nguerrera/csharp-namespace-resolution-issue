@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Foo\Foo.csproj" />
-    <ProjectReference Include="..\Foo.Bar\Foo.Bar.fsproj" />
+    <ProjectReference Include="..\Foo.Bar\Foo.Bar.fsproj" Aliases="FooBar" />
   </ItemGroup>
 
 </Project>
