@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Foo.Bar</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BazAttribute.fs" />
+  </ItemGroup>
+</Project>
